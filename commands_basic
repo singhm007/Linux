@@ -1,0 +1,32 @@
+
+# uname -a/-p/-a/-v => different options for printing host information.
+
+man <command> => man uname => prints information and usages of command
+- press space for next page
+- press q for terminate and exit
+
+# whoami , who , w => displays user information 
+
+
+
+
+
+## chmod u/g/o+rwx filename => add all permission to user/group/other 
+chmod u/g/o-rwx => removes all permission from user/group/other
+
+chmod 777 filename => gives rwx to u,g and all. 
+- first place is for user
+- second place is for group
+- third place is for other/all
+
+0 = No permission
+1 = execute
+2 = write 
+3 = execute + write
+4 = read 
+5 = read + execute 
+6 = read + write 
+7 = read + write + execute 
+
+
+
