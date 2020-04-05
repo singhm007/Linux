@@ -9,8 +9,6 @@ man <command> => man uname => prints information and usages of command
 
 
 
-
-
 ## chmod u/g/o+rwx filename => add all permission to user/group/other 
 chmod u/g/o-rwx => removes all permission from user/group/other
 
@@ -27,6 +25,28 @@ chmod 777 filename => gives rwx to u,g and all.
 5 = read + execute 
 6 = read + write 
 7 = read + write + execute 
+
+
+## Help Commands :
+whatis command / what ls => gives some details of ls command
+command --help / ls --help => provides ls command details 
+man command / man ls => displays the manual pofe for the ls command.
+
+## Adding text to files :
+
+vi/vim
+redirect command output > or >> 
+echo "text" > or >> : > overwrites the file , >> appends into file
+
+## File Reading
+
+cat filename - displays enrire content of the filename
+more filename - displays one page at time of tne filename
+less filename - displays one page in reverse order from filename
+head 10 filename  - displays top 10 line of the filename
+tail -5 filename - displays last 5 line from filename
+
+
 
 
 
