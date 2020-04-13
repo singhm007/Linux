@@ -1,0 +1,39 @@
+
+## EC2 =================================
+
+sudo su => elevate the root privilage
+yum update -y  => update the ec2 instance
+
+yum install -y httpd.x86_64
+
+
+systemctl start httpd.service => install apache http 
+
+systemctl enable httpd.service => enable http services on reboot
+ 
+curl localhost:80  => load t
+
+********************** Script for creating EC2 with bottstrap script : Start ********************
+#!/bin/bash
+
+sudo su 
+yum update -y
+yum install -y httpd.x86_64
+systemctl start httpd.service
+systemctl enable httpd.service
+echo "Jay Shree Ram" > /var/www/html/index.html
+
+********************** Script for creating EC2 with bottstrap script : End ***********************
+
+
+EC2 ======================================
+
+lsblk => Displays all voume information
+
+sudo file -s /dev/xvdb
+
+sudo mkfs -t ext4 /dev/xvdb
+
+sudo mkdir /data
+ sudo mount /dev/xvdb /data 
+ 

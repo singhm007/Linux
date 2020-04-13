@@ -12,6 +12,8 @@ man <command> => man uname => prints information and usages of command
 ## chmod u/g/o+rwx filename => add all permission to user/group/other 
 chmod u/g/o-rwx => removes all permission from user/group/other
 
+chmod a+rwx = here a stands for all .
+
 chmod 777 filename => gives rwx to u,g and all. 
 - first place is for user
 - second place is for group
@@ -45,6 +47,92 @@ more filename - displays one page at time of tne filename
 less filename - displays one page in reverse order from filename
 head 10 filename  - displays top 10 line of the filename
 tail -5 filename - displays last 5 line from filename
+
+
+
+=================================================
+
+ping server_address 
+ifconfig => displays interfaces available in system
+ifup/ifdown interface_name => to bring up/down interface
+netstat -rnv => provides information on gateway etc
+tcpdump(tcpdump -i enp0s3) => sniffing tool which traces every traffic coming/leaving to/from machine
+
+ethtool enp0s3 => provodes interface information
+
+wget package => download from internet 
+
+===========================Adminsitrations ===========================
+
+useradd
+groupadd
+userdel
+groupdel
+usermod
+
+
+Files :
+/etc/passwd
+/etc/group
+/etc/shadow
+
+example : useradd -g group_name -s /bin/bash -c "User_descrption" -m -d /home/user_name user_name 
+
+paddwd user_name => to create the password 
+
+id user_name => displays user information
+
+## USer Monitor 
+
+who
+w
+last
+id 
+finger
+
+## USer Communication on prompt
+
+users  => displays all user logged in 
+wall <Message >  => Broad message to everyone logged in to that session
+clt + d => to come out.
+wrrite user_name  => one to one communication
+
+## system utility commands :
+
+date 
+uptime
+cal
+hosyname
+uname 
+bc => binary calculator
+
+## Process and jobs
+
+systemctl
+ps
+top
+kill
+crontab
+at
+
+## Logs 
+
+/var/log
+
+================================================Shell Scripting =======================
+
+echo $0 => Display your shell
+cat /etc/shells = Displays all the available shell
+
+
+
+
+
+
+
+
+
+
 
 
 
